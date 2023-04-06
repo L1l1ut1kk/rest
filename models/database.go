@@ -5,7 +5,7 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
 )
 
-func data() *gorm.DB {
+func database() *gorm.DB {
 	db, err := gorm.Open("sqlite3", "images.db")
 	if err != nil {
 		panic("failed to connect to database")
